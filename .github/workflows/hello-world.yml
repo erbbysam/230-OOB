@@ -1,0 +1,8 @@
+name: hello-world
+on: pull_request_target
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo Hello world from $GITHUB_BASE_REF!
